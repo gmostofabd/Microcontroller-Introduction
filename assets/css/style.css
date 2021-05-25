@@ -1,27 +1,20 @@
 
-body{
-    align-items: center;
-    background-color: white;
-  }
+body{align-items: center; background-color: white;}
 
-h2{
-    font-size: 150%;
+h2{ margin: 0px; padding: auto;
+    font-size: 200%;
     flex-wrap: 23px ;
     color: blueviolet;
-    padding: auto;
-    margin: 0px;
   }
 
-h3{
+h3{ margin-left: 5px;
     font-size: 20px;
     flex-wrap: 23px ;
     text-align: left;
-    color: rgb(105, 13, 70);
-    }
-
-img {
-    width: 100%; height: 100%;
+    color: rgb(33, 13, 105);
   }
+
+img{width: 100%; height: 100%;}
 
 p{
     text-align: justify;
@@ -72,10 +65,10 @@ li{
 blockquote {
     background: #f9f9f9;
     margin: 1.5em 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 5px; padding-right: 5px;
     quotes: "\201C""\201D""\2018""\2019";
   }
+
 #header_common{
     width:1000px; height:150px; 
     margin-left: auto ; margin-right: auto ; 
@@ -84,8 +77,7 @@ blockquote {
 
 #topic_container{
 	  width:958px; height:auto; 
-	  margin: auto;
-    padding: 20px;
+	  margin: auto; padding: 20px;
     text-align: center; 
 	  border-radius: 10px;
 	  border: 1px solid #73AD21;
@@ -99,6 +91,12 @@ blockquote {
     padding: 10px;
   }
 
+#exp_lst_cont {
+    width: 190px; height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #e4e1e1;
+  }
 
 .vdo_lst_cont {
     width: 178px; height: 200px;
@@ -129,33 +127,16 @@ blockquote {
     color: rgb(112, 108, 108);
   }
 
-.box {
-    width: 40%; height: auto;
-  }
-
-.box_50 {
-    width: 50%; height: auto;
-  }
-.box_70 {
-    width: 70%; height: auto;
-  }
-
-.box_80 {
-    width: 80%; height: auto;
-  }
+.box {width: 40%; height: auto;}
+.box_50 {width: 50%; height: auto;}
+.box_70 {width: 70%; height: auto;}
+.box_80 {width: 80%; height: auto;}
 
 .inside {
     list-style-position: inside;
-    list-style-type: square;
+    list-style-type: none;
   }
   
-
-#exp_lst_cont {
-    width: 190px; height: auto;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #e4e1e1;
-  }
   
 .box_this_lesson {
   width: 178px; height: auto;
@@ -165,31 +146,30 @@ blockquote {
   margin-bottom: 10px;
 }
  
-#navcontainer{
-    background: #f0e7d7;
-    width: 120px;
-    margin: 0 auto;
-    padding: .1em 0;
-    
-    font-family: georgia, serif;
-    font-size: 11px;
-    text-align: center;
-  }
-  
-
-
 
 #footer_common{
-    width:960px; height:200px;
-    margin-left: auto ; margin-right: auto ; 
-    border-radius: 25px; border: 2px solid #73AD21;
-    padding: 20px;
-    background-color:#112233;
+    width:980px; height:200px;
+    margin-left: auto ; margin-right: auto ;
+    margin-top: 10px; 
+    border-radius: 10px; 
+    padding: 10px;
+    background-color:#e1e3e6;
+    color: rgb(81, 153, 123);
   }
 
-  /*====================================================================================================*/
-#wrp_prj_footer{width: 1000px; height: 250px;  margin-top: 50px ; margin-bottom: 50px ; margin-left: auto ; margin-right: auto ; border-top: 3px solid #888888;}
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-    .prj_footer_cell{width: 170px; height: 220px;  margin-left: 43px;  margin-top: 10px; ;  float: left; box-shadow: 0px 0px 9px rgba(200,70,100,0.1);}
+.prj_footer_cell{width: 150px; height: 180px;  
+    margin-left: 50px;  margin-top: 5px;
+    padding-left: 10px; padding-top: 10px;
+    border-radius: 5px;  
+    float: left;
+    font-size: 80%; 
+    box-shadow: 0px 0px 9px rgba(200,70,100,0.1);}
 /*====================================================================================================*/
-  
+
+.ul_footer{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}  
