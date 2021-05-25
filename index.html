@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+	<meta name="Keywords" content="Microcontroller,8051,Assembly,Programming,Code,Proteus">
+	<title>Microcontroller Introduction</title>
+</head>
+
+
+<body  bgcolor=white>
+
+	<div id="header_common"><img src="assets/images/github_banner.png" alt="common_header"></div>
+	<div id="topic_container"><h2>Theory - 01: Introduction to Microcontrollers</h2></div>
+
+
+  <table align = center width=1000 height=1000  bgcolor= white>
+	  <tr>
+	    <td width=200 bgcolor=white valign=top>
+
+		    <div id="exp_lst_cont">
+            <ol><h3>8051 Experiment List:</h3>
+              <li><a href="https://gmostofabd.github.io/8051-LED/">LED Blink</a></li>
+              <li><a href="https://gmostofabd.github.io/8051-Push-Button/">Push Button Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-7Segment/">Seven Segment Display Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-LED-Matrix/">LED Dot Matrix Display Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-LCD/">LCD Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-Analog/">Potentiometer (or Analog) Reading</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-Keypad/">Key Pad Matrix Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/dc-motor-8051/">DC Motor Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/stepper-motor-8051/">Stepper Motor Interfacing</a></li>
+                <li><a href="https://gmostofabd.github.io/8051-RTC/">RTC Interfacing</a></li>
+                <li>EEPROM Interfacing</li>
+                <li>Bluetooth interfacing</li>
+                <li>7 Segment Clock</li>
+                <li>Serial Communication</li>
+            </ol>
+        </div>
+
+        <div id="proj_lst_cont">
+            <ol><h3>8051 Projects:</h3>
+              <li>Access Control System</li>
+              <li>6 Digit Clock</li>
+              <li>IR Remote Load ON OFF</li>
+              <li>Line Follower</li>
+              <li>Incubator Controller</li>
+            </ol>
+        </div>         
+
+    </td>
+
+
+	  <td width=600 align=center valign=top style="padding-left: 10px; padding-right: 10px;">
+		
+		<h3>Introduction:</h3>
+          <blockquote>
+		  <p>
+        This is the first in a long line of tutorials aimed to provide a beginners guide 
+        and tutorial based around the Atmel 8051 Microcontroller. It will show you, 
+        through examples and projects, how to program and provide functions for this 
+        microcontroller and what the uses and applications are. Before we learn Embedded 
+        System, lets learn: what is a System?
+
+         <br><br>A system is an arrangement where all its component work according to the 
+         specific defined rules. It is a method of organizing, working, or performing one 
+         or more tasks according to a fixed plan. For example, a watch is a time displaying 
+         system. Its components follow a set of rules to show time. If one of its parts 
+         fails, the watch will stop working. So we can say, in a system, all its sub-components 
+         depend on each other. Our talks about embedded system. An embedded system can be 
+         thought of as a computer hardware system having software embedded in it. Our talks 
+         about embedded system.
+	    </p>
+          </blockquote>
+
+      <h3>Embedded System</h3>
+        <div class="box_70"><img src="assets/images/Embedded-systems2.jpg"/><span class="capt_cont">Fig: embedded system</span></div>
+
+      <blockquote>
+        <p>
+          An embedded system is typically some combination of hardware and software, either 
+          fixed in function or programmable.  An embedded system could be designed to support a 
+          specific function or functions within a larger system.  Examples include industrial 
+          control systems and machines, automobiles, military systems such as avionics and 
+          weapons system, medical equipment, consumer products, smartphones, and building 
+          automation.
+        </p>
+      </blockquote>
+
+
+      <h3>Characteristics of an Embedded System :</h3>            
+        <div class="box_70"><img src="assets/images/es_charac.png"/><span class="capt_cont">Fig: Embedded System Characteristics</span></div>
+
+
+
+      <h3>Components of an Embedded System :</h3>
+      <div class="box_70"><img src="assets/images/es_comp.png"/><span class="capt_cont">Fig: Basic Components of an Embedded System</span></div>
+
+      <p>An embedded system has three major components as below:</p>
+        <ul>
+          <li><strong>Hardware :</strong> An embedded system uses a hardware platform to perform the operation. 
+            Hardware of the embedded system is assembled with a microprocessor/microcontroller. It has the 
+            elements such as input/output interfaces, memory, user interface and the display unit.</li>
+          <li><strong>Application Software :</strong> The software of an embedded system is written to execute a particular 
+            function. It is normally written in a programming language (Assembly, C, Python or such) and 
+            then compiled down to offer code that can be stuck within a non-volatile memory in the hardware.</li>
+          <li><strong>RTOS</strong>: A Real Time Operating System, commonly known as an RTOS, is a software 
+            component that rapidly switches between tasks, giving the impression that multiple programs are 
+            being executed at the same time on a single processing core. It offers scheduling, Priority, 
+            Multitasking, Memory-Data-Object-Class Management, Library Management etc.</li>
+        </ul>
+
+
+        <h3>Processors</h3>
+        <blockquote>
+          <p>
+            Processor is the heart of an embedded system as it is responsible for interpreting most of 
+            computers commands. It is the basic unit that takes inputs and produces an output after 
+            processing the data. For an embedded system designer, it is necessary to have the knowledge 
+            of both microprocessors and microcontrollers.
+          </p>
+        </blockquote>
+
+        <h3>A processor has two essential units:</h3>
+        <ul>
+          <li><strong>Control unit:</strong> This unit in processors performed the program flow control 
+            operation inside an embedded system. The control unit also acts as a fetching unit for 
+            fetching the set of instructions stored inside a memory.</li>
+          <li><strong>Execution unit:</strong> This unit is used for execution the various tasks inside 
+            a processors. It mainly comprises of arithmetic and logical unit (ALU) and it also include 
+            a circuit that executes the instruction sets used to perform program control operation inside 
+            processors. A processor runs the cycles of fetch and executes the instructions in the same 
+            sequence as they are fetched from memory.</li>
+        </ul>
+
+
+        <h3>Processor Architecture</h3>
+          <div class="box_70"><img src="assets/images/harvard_vs_vonneu2.png"/><span class="capt_cont">Fig: Harvard and Von Neumann</span></div>
+
+
+        <h3>Von Neumann Architecture</h3>
+        <blockquote>
+          <p>
+            The Von Neumann architecture was first proposed by a computer scientist John Von Neumann. 
+            In this architecture, one data path or bus exists for both instruction and data. As a result, 
+            the CPU does one operation at a time. It either fetches an instruction from memory, or 
+            performs read/write operation on data. So an instruction fetch 
+            and a data operation cannot occur simultaneously, sharing a common bus.
+          </p>
+        </blockquote>
+
+        <h3>Harvard Architecture</h3>
+
+        <blockquote>
+          <p>
+            The Harvard architecture offers separate storage and signal buses for instructions and data. 
+            This architecture has data storage entirely contained within the CPU, and there is no access 
+            to the instruction storage as data. Computers have separate memory areas for program 
+            instructions and data using internal data buses, allowing simultaneous access to both 
+            instructions and data.
+
+            <br><br>Programs needed to be loaded by an operator; the processor could not boot itself. 
+            In a Harvard architecture, there is no need to make the two memories share properties.
+          </p>
+        </blockquote>
+
+        <h3>Types of Processors</h3>
+
+        <p>Processors can be of the following categories:</p>
+
+        <ul>
+          <li><strong>Application Specific System Processor(ASSP):</strong> ASSP is application dependent 
+            system processor used for processing signal of embedded system. Therefore for different 
+            application performing task a unique set of system processors is required.</li>
+          <li><strong>Application Specific Instruction Processor(ASIP):</strong> ASIP is application 
+            dependent instruction processors. It is used for processing the various instruction set inside 
+            a combinational circuit of an embedded system.</li>
+          <li><strong>General Purpose Processor (GPP):</strong>: GPP is used for processing signal from 
+            input to output by controlling the operation of system bus, address bus and data bus inside 
+            an embedded system.</li>
+        </ul>
+
+        <p>Types of general purpose processor are:</p>
+        <ul>
+          <li><strong>Microprocessor -</strong> The microprocessor is a multipurpose, clock-driven, 
+            register-based, digital integrated circuit that accepts binary data as input, processes 
+            it according to instructions stored in its memory, and provides results 
+            (also in binary form) as output.</li>
+          <li><strong>Microcontroller -</strong> A microcontroller is a compact integrated circuit 
+            designed to govern a specific operation in an embedded system. A typical microcontroller 
+            includes a processor, memory and input/output (I/O) peripherals on a single chip.This is 
+            the device will will continue to learn in deep.</li>
+          <li><strong>DSP - </strong> Digital Signal Processing involves the interchanging of information 
+            so that said information can be observed, analyzed, or transformed into a separate form of signal.</li>
+          <li><strong>ASP - </strong> (Analog signal processing) processes the signals which are not 
+            digitized. The examples of ASP systems include classical radio, TV, telephone, radar etc.</li>
+  
+        </ul>
+  
+        <h3>Components of Microprocessor</h3>
+        <blockquote>
+          <p>
+            A microprocessor is an electronic component that is used by a computer to do its work. 
+            It is a central processing unit on a single integrated circuit chip containing millions 
+            of very small components including transistors, resistors, and diodes that work together.
+
+            <br><br>Operations performed by microprocessor are adding, subtracting, comparing two 
+            numbers and fetching the data from memory for transferring it from one place to another.
+          </p>
+          </blockquote>
+
+          <div class="box_70"><img src="assets/images/inside_a_processor.png"/><span class="capt_cont">Fig: Components of a Processor</span></div>
+
+          <ul>
+            <li><strong>Arithmetic and Logic unit (ALU):</strong> ALU inside a microprocessor used to 
+              perform the arithmetic and logic operation. It performs the logic operation on the data 
+              stored inside a register.</li>
+            <li><strong>Accumulator:</strong> It is a register inside which the intermediate arithmetic 
+              and logical operation data is stored.</li>
+            <li><strong>Working registers:</strong> It is a storage device used to store the data 
+              inside a microprocessor in different address location.</li>
+            <li><strong>Program counter:</strong> It is used for counting the number of program 
+              executed inside a microprocessor.</li>
+            <li><strong>Stack pointer:</strong> Stack pointer act as a pointer to the certain 
+              address. It is a register used to store the address of the last program request 
+              made by the processor inside a stack.</li>
+            <li><strong>Clock circuit:</strong> It is used for generate the clock pulse required as 
+              a reference signal for the microprocessor.</li>
+            <li><strong>Interrupt circuit:</strong> It is used for generating the interrupt signal 
+              when the higher priority process required to be served first on basis of priority 
+              by microprocessor.</li>
+          </ul>
+
+
+          <h3>Microcontrollers</h3>
+          <blockquote>
+            <p>
+              You can think of a microcontroller like a tiny computer. You can connect things, 
+              like a small display, some buttons, a motor and some sensors. And you can put 
+              programs onto it and run them.
+            </p>
+          </blockquote>
+
+          <div class="box_70"><img src="assets/images/mcu1.jpg"/><span class="capt_cont">Fig: Microcontroller and its inside</span></div>
+
+          <blockquote>
+            <p>
+              A microcontroller (MCU for microcontroller unit) is a small computer on a single 
+              integrated circuit (IC) chip. It contains one or more CPUs (processor cores) along 
+              with memory and programmable input/output peripherals. They are used for controlling 
+              other portions of an electronic system, usually via a microprocessor unit (MPU), 
+              memory, and some peripherals. These devices are optimized for embedded applications 
+              that require both processing functionality and agile, responsive interaction with 
+              digital, analog, or electromechanical components.
+            </p>
+          </blockquote>
+
+
+          <h3>Types of Microcontrollers</h3>
+          <blockquote>
+            <p>
+              Microcontrollers are divided into various categories based on memory, 
+              architecture, bits and instruction sets. Following is the list of their types:
+            </p>
+          </blockquote>
+
+          <strong>Bit :</strong> 
+          <p>Based on bit configuration, the microcontroller is further divided into three categories.</p>
+          <ul>
+            <li><strong>8-bit microcontroller:</strong> This type of microcontroller is used to execute 
+              arithmetic and logical operations like addition, subtraction, multiplication division, etc. 
+              For example, Intel 8031 and 8051 are 8 bits microcontroller.</li>
+            <li><strong>16-bit microcontroller:</strong>This type of microcontroller is used to perform 
+              arithmetic and logical operations where higher accuracy and performance is required. 
+              For example, Intel 8096 is a 16-bit microcontroller.</li>
+            <li><strong>32-bit microcontroller:</strong>This type of microcontroller is generally used 
+              in automatically controlled appliances like automatic operational machines, medical 
+              appliances, etc.</li>
+          </ul>
+  
+
+          <strong>Memory :</strong> 
+          <p>Based on the memory configuration, the microcontroller is further divided into two categories.</p>
+          <ul>
+            <li><strong>External memory microcontroller: </strong> This type of microcontroller is designed 
+              in such a way that they do not have a program memory on the chip. Hence, it is named as 
+              external memory microcontroller. For example: Intel 8031 microcontroller.</li>
+            <li><strong>Embedded memory microcontroller: </strong>This type of microcontroller is designed 
+              in such a way that the microcontroller has all programs and data memory, counters and timers, 
+              interrupts, I/O ports are embedded on the chip. For example: Intel 8051 microcontroller.</li>
+          </ul>
+
+
+          <strong>Instruction Set :</strong> 
+          <p>Based on the instruction set configuration, the microcontroller is further divided into two categories.</p>
+          <ul>
+            <li><strong>CISC: </strong> CISC stands for complex instruction set computer. It allows the user to 
+              insert a single instruction as an alternative to many simple instructions.</li>
+            <li><strong>RISC: </strong>RISC stands for Reduced Instruction Set Computers. It reduces the 
+              operational time by shortening the clock cycle per instruction.</li>
+          </ul>
+
+
+          <h3>Applications of Microcontrollers</h3>
+          <p>
+            There are so many things you can do with a microcontroller. The possibilities are endless! 
+            You could build a robot. Or an MP3-player. Or a cellphone. Or a door-lock that unlocks your 
+            door automatically when you enter a code on your smart phone.
+
+            <br><br>Microcontrollers are widely used in various different devices such as
+          </p>
+          <ul>
+            <li><strong>Consumer Electronics Products: </strong> Toys, Cameras, Robots, Washing Machine, Microwave Ovens etc.</li>
+            <li><strong>Instrumentation and Process Control: </strong>Oscilloscopes, Meters, Control Panels, Data Acquisition etc.</li>
+            <li><strong>Medical Instruments:</strong>ECG Machine, Lab Equipment's, Therapeutic Equipment's, Accu-Check etc.</li>
+            <li><strong>Communication: </strong>Cell Phones, Telephone Sets, Answering Machines etc.</li>
+            <li><strong>Office Equipment: </strong>Fax, Printers etc.</li>
+            <li><strong>Mp3 Player, PDAs etc.</li>
+            <li><strong>Automobile: </strong>Speedometer, Auto-breaking system, Signals and Indicators etc.</li>
+          </ul>
+
+
+
+      </td>
+
+	  <td valign=top>
+		
+      <div class="box_this_lesson">
+        <h3>This lesson includes:</h3>
+        <ol>
+          <li>Introduction</li>
+          <li>Hardware Discussion</li>
+          <li>Circuit Diagram</li>
+          <li>Assembly Code</li>
+          <li>Post Run Discussion</li>
+          <li>Exercises</li>
+          <li>Tips and Tricks</li>
+        </ol>
+      </div>
+
+
+      <div class="vdo_lst_cont">
+          <h3>Lesson Video</h3>
+          <iframe width="155" height="100"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+      </div>
+
+      <div class="box_this_lesson">
+          <h3>Important Downloads</h3>
+          <ol class="inside">
+            <li>Proteus 8.7</li>
+            <li>MIDE-51 IDE</li>
+            <li>AVRDUDES</li>
+          </ol>
+      </div>
+
+
+      <div class="box_this_lesson">
+          <span><b>Lesson Contents</b></span>
+          <ol>
+              <li>Circuit Diagram (Proteus)</li>
+              <li>Lesson PDF</li>
+              <li>7seg_1d_8051.asm</li>
+              <li>7seg_2d_8051.asm</li>
+              <li>7segment Datasheet PDF</li>
+              <li>Exercise Solutions</li>
+          </ol>
+      </div>
+
+    </td>
+
+
+	</tr>
+         
+  </table>
+
+  <table width=1000 height=50 align= center border="1">
+	  <tr>
+			<td>Prev topic: Push Button Interfacing with 8051</td>
+			<td>Next topic: LED Matrix interfacing with 8051</td>
+		</tr>
+  </table>
+
+	<div id="footer_common">
+    <div class="prj_footer_cell">
+      <font face="Verdana, Arial, Helvetica, sans-serif" color="#0000ff" size="2" ><strong>Top Tutorial sites </strong></font>
+      <div id="navcontainer">
+        <ul >
+          <li id="active"><a href="http://www.melab-bd.com/home.html"><strong>Circuit Today</strong></a></li>
+          <li><a href="http://www.melab-bd.com/about.html"><strong>Radio Electronics</strong></a></li>
+          <li><a href="http://www.melab-bd.com/product.html"><strong>MikroE</strong></a></li>
+          <li><a href="http://www.melab-bd.com/project.html"><strong>8051 Projects</strong></a></li>
+          <li><a href="http://www.melab-bd.com/trainings.html"><strong>101 Components</strong></a></li>
+         </ul>
+      </div>	
+    </div>
+  </div>
+    
+
+</body>
+
+
+</html>
