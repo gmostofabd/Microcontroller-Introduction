@@ -1,14 +1,33 @@
 
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="shortcut icon" href="https://github.com/gmostofabd/melab-store/blob/main/Images/melab-bd_logo.jpg?raw=true" type="image/x-icon">
-    	
-	<meta charset="utf-8">
+  <link rel="shortcut icon" href="https://github.com/gmostofabd/melab-store/blob/main/Images/melab-bd_logo.jpg?raw=true" type="image/x-icon">
+  
+  <script src="https://github.com/gmostofabd/melab-store/blob/main/sharedfooter.js" type="text/javascript" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <script>
+        $(function(){
+            $('#sidebar1').load("assets/sidebar1.html");
+        });
+    </script>
+
+  <meta charset="utf-8">
 	<meta name="Keywords" content="Microcontroller,8051,Assembly,Programming,Code,Proteus">
+      
+  <!--Facebook Open graph Mete Tags-->
+  <meta property="og:url"                content="https://gmostofabd.github.io/Microcontroller-Introduction/" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Theory 01 : Introduction to Microcontroller" />
+  <meta property="og:description"        content="Introduction to Microcontroller and Embedded System" />
+  <meta property="og:image"              content="assets/images/Embedded-systems2.jpg" />
+  
 	<title>Microcontroller Introduction</title>
 </head>
 
@@ -21,47 +40,9 @@
 
   <table align = center width=1000 height=1000  bgcolor= white>
 	  <tr>
-	    <td width=200 bgcolor=white valign=top>
-
-		    <div id="exp_lst_cont">
-          <h3>Theories :</h3>
-          <ul class="ul_exp">
-            <li><a href="https://gmostofabd.github.io/8051-LED/">Introduction to Microcontroller</a></li>
-            <li><a href="https://gmostofabd.github.io/8051-Push-Button/">8051 Architecture</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-7Segment/">8051 Instruction Set</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-LED-Matrix/">Assembly Programming</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-LCD/">Development Tools & Environment</a></li>
-          </ul>
-
-          <h3>Experiments :</h3>
-            <ul class="ul_exp">
-              <li><a href="https://gmostofabd.github.io/8051-LED/">LED Blink</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-Push-Button/">Push Button Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-7Segment/">Seven Segment Display Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-LED-Matrix/">LED Dot Matrix Display Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-LCD/">LCD Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-Analog/">Potentiometer (or Analog) Reading</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-Keypad/">Key Pad Matrix Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/dc-motor-8051/">DC Motor Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/stepper-motor-8051/">Stepper Motor Interfacing</a></li>
-              <li><a href="https://gmostofabd.github.io/8051-RTC/">RTC Interfacing</a></li>
-            </ul>
-        </div>
-
-        <div id="proj_lst_cont">
-            <ol><h3>8051 Projects:</h3>
-              <li>Access Control System</li>
-              <li>6 Digit Clock</li>
-              <li>IR Remote Load ON OFF</li>
-              <li>Line Follower</li>
-              <li>Incubator Controller</li>
-            </ol>
-        </div>         
-
-    </td>
 
 
-	  <td width=600 align=center valign=top bgcolor= white>
+      <td width=800 align=center valign=top style="padding-left: 10px; padding-right: 10px;">
 		
 		<h3>Introduction:</h3>
       <blockquote>
@@ -337,45 +318,10 @@
 		
       <div class="vdo_lst_cont">
         <h3>Lesson Video</h3>
-        <iframe width="174" height="120" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <iframe width="186" height="130" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
       </div>
 
-      <div class="box_this_lesson">
-        <h3>Lesson Includes:</h3>
-        <ul class="ul_right">
-          <li>Introduction</li>
-          <li>Hardware Discussion</li>
-          <li>Circuit Diagram</li>
-          <li>Assembly Code</li>
-          <li>Post Run Discussion</li>
-          <li>Exercises</li>
-          <li>Tips and Tricks</li>
-        </ul>
-      </div>
-
-
-
-      <div class="box_this_lesson">
-          <h3>Important Downloads</h3>
-          <ul class="ul_right">
-            <li>Proteus 8.7</li>
-            <li>MIDE-51 IDE</li>
-            <li>AVRDUDES</li>
-          </ul>
-      </div>
-
-
-      <div class="box_this_lesson">
-          <span><b>Lesson Contents</b></span>
-          <ul class="ul_right">
-              <li>Circuit Diagram (Proteus)</li>
-              <li>Lesson PDF</li>
-              <li>7seg_1d_8051.asm</li>
-              <li>7seg_2d_8051.asm</li>
-              <li>7segment Datasheet PDF</li>
-              <li>Exercise Solutions</li>
-          </ul>
-      </div>
+      <div id="sidebar1"></div>
 
     </td>
 
